@@ -4,7 +4,7 @@ A full-stack movie ticketing platform recreated from [RiteshSinghBaghel18/iMovie
 
 ---
 
-## 🎨 Theme & Styling
+##  Theme & Styling
 
 - **Primary Colors**:
   - `#5B3113` — Deep Rich Espresso / Chestnut (Buttons, hero accents, active states)
