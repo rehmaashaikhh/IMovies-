@@ -1,0 +1,466 @@
+/* =========================================================
+   IMOVIES - PIXEL-PERFECT CINEMA THEME STYLESHEET
+   Matching uploaded reference screenshots exactly
+   ========================================================= */
+
+:root {
+  --cinema-page-bg: #141a29;      /* Dark slate navy used throughout all screenshots */
+  --cinema-card-bg: #0f1422;      /* Deep card surface */
+  --cinema-input-bg: #1a2235;     /* Form input background */
+  --cinema-red: #e50914;          /* Brand cinema red */
+  --cinema-red-glow: rgba(229, 9, 20, 0.55);
+  --cinema-text: #ffffff;
+  --cinema-text-muted: #94a3b8;
+  --cinema-border-red: #e50914;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--cinema-page-bg) !important;
+  color: var(--cinema-text) !important;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #0d121c;
+}
+::-webkit-scrollbar-thumb {
+  background: #243048;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cinema-red);
+}
+
+/* Brand Logo (Matching Screenshots) */
+.brand-logo {
+  font-size: 1.55rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.brand-logo .brand-i {
+  color: var(--cinema-red);
+  font-weight: 800;
+}
+
+/* Top Navbars (Matching Screenshot 4, 5, and Image 4 UserProducts) */
+.cinema-navbar-exact {
+  background-color: var(--cinema-page-bg) !important;
+  padding: 0.85rem 1.8rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.navbar-icon-btn {
+  background: transparent;
+  border: none;
+  color: #e2e8f0;
+  font-size: 1.15rem;
+  padding: 0.4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  border-radius: 6px;
+}
+.navbar-icon-btn:hover {
+  color: var(--cinema-red);
+  transform: scale(1.1);
+}
+
+/* User Navbar Search Bar (Matching Image 4 UserProducts & User Orders) */
+.user-search-wrapper {
+  background-color: #1a2235;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 0.6rem;
+  width: 280px;
+  max-width: 100%;
+}
+.user-search-input {
+  background: transparent !important;
+  border: none !important;
+  color: #ffffff !important;
+  font-size: 0.88rem;
+  outline: none;
+  width: 100%;
+}
+.user-search-icon-btn {
+  background: var(--cinema-red);
+  color: #ffffff;
+  border: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 800;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* Landing Page (Matching Screenshot 1) */
+.landing-exact {
+  background-color: #000000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 1.5rem;
+}
+.landing-content-box {
+  max-width: 850px;
+  margin: 0 auto;
+  width: 100%;
+}
+.landing-title-exact {
+  font-size: 3.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.5px;
+}
+.landing-title-exact .brand-red {
+  color: var(--cinema-red);
+}
+.landing-subtitle-exact {
+  color: #d1d5db;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 2.2rem;
+  max-width: 650px;
+}
+.btn-landing-signin {
+  background-color: var(--cinema-red) !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 9999px !important;
+  padding: 0.65rem 2.2rem !important;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  box-shadow: 0 0 20px rgba(229, 9, 20, 0.7);
+  transition: all 0.25s ease;
+  display: inline-block;
+}
+.btn-landing-signin:hover {
+  background-color: #f40612 !important;
+  box-shadow: 0 0 28px rgba(229, 9, 20, 0.9);
+  transform: translateY(-2px);
+  color: #ffffff !important;
+}
+.btn-landing-signup {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: 1.5px solid #ffffff !important;
+  border-radius: 9999px !important;
+  padding: 0.65rem 2.2rem !important;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  display: inline-block;
+}
+.btn-landing-signup:hover {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Auth Cards (Matching Screenshots 2 & 3) */
+.auth-page-wrapper {
+  background-color: var(--cinema-page-bg);
+  min-height: calc(100vh - 65px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 1rem;
+}
+.auth-box-exact {
+  width: 100%;
+  max-width: 440px;
+  background-color: var(--cinema-card-bg);
+  border: 1px solid var(--cinema-border-red);
+  border-radius: 10px;
+  padding: 2.5rem 2.2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+}
+.auth-title-exact {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.25rem;
+}
+.auth-subtitle-exact {
+  font-size: 1.15rem;
+  color: #e2e8f0;
+  text-align: center;
+  margin-bottom: 1.8rem;
+  font-weight: 500;
+}
+.form-label-exact {
+  color: #cbd5e1;
+  font-size: 0.88rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  display: block;
+}
+.form-input-exact {
+  background-color: var(--cinema-input-bg) !important;
+  border: 1px solid rgba(255, 255, 255, 0.04) !important;
+  color: #ffffff !important;
+  border-radius: 6px !important;
+  padding: 0.65rem 0.9rem !important;
+  font-size: 0.92rem !important;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+.form-input-exact:focus {
+  border-color: rgba(229, 9, 20, 0.5) !important;
+  box-shadow: 0 0 8px rgba(229, 9, 20, 0.3) !important;
+}
+.form-input-exact::placeholder {
+  color: #64748b;
+  font-size: 0.88rem;
+}
+.btn-submit-exact {
+  background-color: var(--cinema-red) !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 6px !important;
+  padding: 0.55rem 2.2rem !important;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+.btn-submit-exact:hover {
+  background-color: #f40612 !important;
+}
+
+/* Headings with Red Highlight: "Available Movies", "Your Bookings", "Add Show", "Add Theatre" */
+.heading-highlight {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+.heading-highlight .text-red {
+  color: var(--cinema-red);
+}
+
+/* Admin Available Movies Red Banner (Matching Image 1) */
+.cinema-banner-header-exact {
+  background-color: var(--cinema-red);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.35rem;
+  text-align: center;
+  padding: 0.65rem 1rem;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+  margin-bottom: 2rem;
+}
+
+/* User Products Movie Card (Matching Image 4 UserProducts exactly) */
+.user-movie-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+  height: 100%;
+}
+.user-movie-card:hover {
+  transform: translateY(-4px);
+}
+.user-movie-poster-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 148%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #0b0f19;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+.user-movie-poster-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.user-movie-title {
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.user-movie-date {
+  color: #94a3b8;
+  font-size: 0.78rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-bottom: 0.35rem;
+}
+.user-movie-genre-badge {
+  background-color: #881337;
+  color: #fecdd3;
+  font-size: 0.68rem;
+  font-weight: 500;
+  padding: 0.18rem 0.55rem;
+  border-radius: 4px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+/* Top-right poster dot icon (Matching Image 1) */
+.poster-top-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+.poster-top-badge .dot {
+  width: 10px;
+  height: 10px;
+  background-color: var(--cinema-red);
+  border-radius: 50%;
+}
+
+/* User Orders Booking Card (Matching Image 4 User Orders exactly) */
+.booking-card-exact {
+  background-color: var(--cinema-card-bg);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  padding: 0.85rem;
+  gap: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  height: 100%;
+}
+.booking-poster-thumb {
+  width: 110px;
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+  background-color: #0b0f19;
+}
+.booking-details-exact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.84rem;
+  color: #cbd5e1;
+}
+.booking-line {
+  margin-bottom: 0.28rem;
+  white-space: nowrap;
+}
+.booking-label {
+  color: #94a3b8;
+  display: inline-block;
+  min-width: 85px;
+}
+.booking-val-white {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Admin Centered Form Boxes (Matching Images 2 & 3: Add Show & Add Theatre) */
+.admin-form-card-exact {
+  background-color: var(--cinema-card-bg);
+  border-radius: 12px;
+  padding: 2.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+/* Admin Show Cards (Matching Screenshot 4) */
+.admin-show-card-exact {
+  background-color: var(--cinema-card-bg);
+  border-radius: 10px;
+  padding: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.admin-show-card-exact .show-meta-line {
+  color: #cbd5e1;
+  font-size: 0.88rem;
+  margin-bottom: 0.4rem;
+}
+.btn-delete-show-exact {
+  background: transparent;
+  border: 1px solid var(--cinema-red);
+  color: #cbd5e1;
+  border-radius: 6px;
+  padding: 0.4rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.btn-delete-show-exact:hover {
+  background-color: rgba(229, 9, 20, 0.15);
+  color: var(--cinema-red);
+}
+
+/* Admin Add Movie Image Box (Matching Screenshot 5) */
+.add-movie-preview-box {
+  width: 280px;
+  height: 180px;
+  border: 1.5px solid var(--cinema-red);
+  border-radius: 12px;
+  margin: 0 auto 1.5rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0b0f19;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.add-movie-preview-box .placeholder-icon {
+  color: var(--cinema-red);
+  font-size: 2.2rem;
+}
