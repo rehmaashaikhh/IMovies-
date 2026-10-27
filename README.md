@@ -1,6 +1,6 @@
 # iMovies - Full-Stack Cinema Ticket Booking Platform
 
-A full-stack movie ticketing platform recreated from [RiteshSinghBaghel18/iMovies](https://github.com/RiteshSinghBaghel18/iMovies) with a custom **Espresso & Warm Bronze** theme, **Direct Instant Reservation** (Razorpay bypassed), **TMDB Live Sync**, and **Brevo Transactional Email** integration.
+A full-stack movie ticketing platform recreated from [RiteshSinghBaghel18/iMovies] with a custom **Espresso & Warm Bronze** theme, **Direct Instant Reservation** (Razorpay bypassed), **TMDB Live Sync**, and **Brevo Transactional Email** integration.
 
 ---
 
